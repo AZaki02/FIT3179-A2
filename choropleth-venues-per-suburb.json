@@ -1,0 +1,40 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Melbourne Live Music Venues per Suburb, 2025",
+  "width": 400,
+  "height": 400,
+  "projection": {"type": "mercator"},
+      "data": {
+        "url": "ne_2.topojson.txt",
+        "format": {"type": "topojson", "feature": "vic_localities", "mesh": "true" }
+      },
+"transform": [
+  {
+    "lookup": "properties.LOC_NAME",
+    "from": {
+      "data": {
+        "url": "venues-per-suburb.csv"
+      },
+      "key": "suburb",
+      "fields": ["qty_venue"]
+    }
+  },
+  {"calculate": "datum.qty_venue == null ? 0 : datum.qty_venue", "as": "qty_venue"}
+],
+"mark": {"type": "geoshape"},
+"encoding": {
+  "color":{
+    "field": "qty_venue",
+    "type":"quantitative",
+    "title": "Number of venues",
+    "scale": {
+      "type": "linear",
+      "domain": [0, 10, 50, 100],
+      "range": ["#a3a6ab", "#0868ac", "#084081"]
+    }
+  }
+  ,"tooltip":[
+    {"field": "properties.LOC_NAME", "type": "nominal", "title": "Suburb"},
+    {"field": "qty_venue","type": "quantitative","title":"Number of venues"}
+  ]
+}}
