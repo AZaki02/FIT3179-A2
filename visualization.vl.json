@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Melbourne Live Music Venues",
+  "width": 800,
+  "height": 400,
+  "projection": {"type": "mercator"},
+      "data": {
+        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_1.topojson.txt",
+        "format": {"type": "topojson", "feature": "vic_localities" }
+      },
+  "layer": [
+    {
+      "mark": {"type": "geoshape", "fill": "lightgray",
+        "stroke": "white", "strokeWidth": 0.5},
+      "encoding": {
+        "color": {"value": "lightgray"}
+      }
+    },
+    {
+      "data": {
+        "url": "live-music-venues.csv"
+      },
+      "mark": {"type": "circle", "opacity": 0.5, "stroke": "black", "strokeWidth": 1},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "color": {"field": "space_type", "type": "nominal",
+          "legend": {"title": "Venue Type"}},
+          "tooltip": [
+          {"field": "venue_name", "type": "nominal", "title": "Venue Name"},
+          {"field": "space_type", "type": "nominal", "title": "Venue Type"},
+          {"field": "suburb", "type": "nominal", "title": "Suburb"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
