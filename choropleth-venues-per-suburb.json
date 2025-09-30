@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "mercator"},
       "data": {
-        "url": "ne_2.topojson.txt",
+        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
         "format": {"type": "topojson", "feature": "vic_localities", "mesh": "true" }
       },
 "transform": [
@@ -13,7 +13,7 @@
     "lookup": "properties.LOC_NAME",
     "from": {
       "data": {
-        "url": "venues-per-suburb.csv"
+        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/venues-per-suburb.csv"
       },
       "key": "suburb",
       "fields": ["qty_venue"]
