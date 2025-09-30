@@ -30,7 +30,7 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 619040,Fad Gallery,"Gnd & Flr1, 14 Corrs Lane, Melbourne, 3000",Melbourne,3000,Bar,http://fadgallery.com.au/,-37.8112354,144.968335
 607972,Penny Blue,"2 Driver Lane, Melbourne, 3000",Melbourne,3000,Bar,https://pennyblue.com.au/,-37.81282107,144.9629887
 105675,Seamstress Restaurant and Bar,"113 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,http://www.seamstress.com.au/prod/,-37.81046225,144.9689575
-103626,European Bier Café,"120 Exhibition Street, Melbourne, 3000",Melbourne,3000,bar,http://europeanbiercafe.com.au/,-37.81285332,144.9711042
+103626,European Bier Café,"120 Exhibition Street, Melbourne, 3000",Melbourne,3000,Bar,http://europeanbiercafe.com.au/,-37.81285332,144.9711042
 631757,Touche Hombre,"237 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,https://www.touchehombre.com.au/,-37.81150165,144.96544
 103102,The Shaw Davey Slum,"171 Elgin Street, Carlton, 3053",Carlton,3053,Bar,http://theshawdaveyslum.com.au/,-37.79743273,144.9687969
 613319,Asian Beer Café,"Shop 311, Level 3, 300 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,http://asianbeercafe.com.au/,-37.81016156,144.9634082
@@ -176,3 +176,4 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Venue,http://www.boney.net.au/,-37.81290578,144.9713687
 508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Venue,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
 644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Venue,http://urbancentral.com.au/,-37.82795248,144.9575823
+
