@@ -71,8 +71,6 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 503039,Spaghetti Tree Restaurant,"Ground, 59-63 Bourke Street, Melbourne, 3000",Melbourne,3000,Bar,http://www.spaghettitree.com.au/,-37.81195322,144.9714825
 681851,The Irish Times Pub,"Gnd & Flr1, 427 Little Collins Street, Melbourne, 3000",Melbourne,3000,Bar,http://theirishtimespub.com.au/,-37.81619295,144.9604635
 575245,Ferdydurke,"Level 1-2, 239 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,http://www.ferdydurke.com.au/,-37.81152723,144.9653532
-102154,St Michael's Uniting Church,"St Michaels Uniting Church, 122-136 Collins Street, Melbourne, 3000",Melbourne,3000,Church,http://stmichaels.org.au/,-37.81452692,144.9693521
-107200,Church of All Nations,"178-204 Palmerston Street, Carlton, 3053",Carlton,3053,Church,http://carlton-uca.org/news/,-37.79596223,144.9687595
 598592,RACV City Club,"501 Bourke Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.racv.com.au/travel-leisure/racv-club/city-club.html,-37.81557208,144.9591017
 105379,Colonial Hotel/Brown Alley Night Club,"240 King Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.thecolonialhotel.com.au/,-37.81460565,144.9550937
 103402,Town Hall Hotel,"33 Errol Street, North Melbourne, 3051",North Melbourne,3051,Hotel,http://www.townhallhotelnorthmelbourne.com.au/,-37.80422448,144.9492425
@@ -102,8 +100,6 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 101221,The Elephant and Wheelbarrow,"94-96 Bourke Street, Melbourne, 3000",Melbourne,3000,Hotel,https://bourkest.elephantandwheelbarrow.com.au/,-37.81200304,144.9703259
 626980,The Woolshed,"Shed 9, Victoria Harbour, Docklands, 3008",Docklands,3008,Hotel,https://www.woolshed.melbourne/,-37.81657159,144.943994
 101450,Dan O'Connell Hotel,"223-227 Canning Street, Carlton, 3053",Carlton,3053,Hotel,http://www.thedan.com.au/,-37.79303583,144.9735257
-104000,Immigration Museum,"400-424 Flinders Street, Melbourne, 3000",Melbourne,3000,Museum,https://museumsvictoria.com.au/immigrationmuseum/,-37.81931971,144.960493
-565482,Melbourne Museum,"11 Nicholson Street, Carlton, 3053",Carlton,3053,Museum,https://museumsvictoria.com.au/melbournemuseum/,-37.80372847,144.9737315
 622055,Spice Market,"LwrGround, 121-131 Collins Street, Melbourne, 3000",Melbourne,3000,Nightclub,http://www.spicemarket.net.au/,-37.81548539,144.9695654
 521316,New Guernica,"Level 2, 318-322 Little Collins Street, Melbourne, 3000",Melbourne,3000,Nightclub,http://www.newguernica.com.au/,-37.81503811,144.9641086
 604756,CQ Melbourne,"Ground, 113 Queen Street, Melbourne, 3000",Melbourne,3000,Nightclub,http://www.cqmelbourne.com.au/our-venues/cq-nightclub-home,-37.81589018,144.9609037
@@ -176,4 +172,3 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Venue,http://www.boney.net.au/,-37.81290578,144.9713687
 508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Venue,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
 644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Venue,http://urbancentral.com.au/,-37.82795248,144.9575823
-
