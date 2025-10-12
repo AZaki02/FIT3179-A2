@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "A simple donut chart with embedded data.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/live-music-venues.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op":"sum",
+          "field": "property_number",
+          "as": "space"
+        }
+      ],
+      "groupby": ["space_type"]
+    }
+  ],
+  "mark": {"type": "arc", "innerRadius": 50},
+  "params": [{
+    "name": "space_type",
+    "select": {"type": "point", "fields": ["space_type"]},
+    "bind": "legend"
+  }],
+  "encoding": {
+    "theta": {"field": "space", "type": "quantitative"},
+    "color": {"field": "space_type", "type": "nominal", "title": "Venue Type"},
+    "opacity": {
+      "condition": {"param": "space_type", "value": 1},
+      "value": 0.2
+    }
+  }
+}
