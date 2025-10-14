@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: url('/images/bkg2.jpg') center center / cover no-repeat fixed;
+    background: url('images/bkg2.jpg') center center / cover no-repeat fixed;
     margin: 0;
     padding: 0;
 }
@@ -60,4 +60,5 @@ p {
     color: #222;
     margin-top: -0.25rem;
     margin-bottom: 1rem;
+
 }
