@@ -30,6 +30,10 @@ table {
     margin-bottom: 2rem;
 }
 
+.td {
+    padding-left: 5%
+}
+
 h1 {
     color: #1C1712;
     margin-top: 0;
@@ -62,3 +66,4 @@ p {
     margin-bottom: 1rem;
 
 }
+
