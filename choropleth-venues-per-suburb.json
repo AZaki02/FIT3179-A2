@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Melbourne Live Music Venues per Suburb, 2025",
   "width": 400,
-  "height": 400,
+  "height": 300,
   "projection": {"type": "mercator"},
       "data": {
         "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
@@ -13,12 +13,12 @@
     "lookup": "properties.LOC_NAME",
     "from": {
       "data": {
-        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/venues-per-suburb.csv"
+        "url": "venues-per-suburb.csv"
       },
       "key": "suburb",
-      "fields": ["qty_venue"]
+      "fields": ["qty_venue", "pop"]
     }
-  },
+  },  
   {"calculate": "datum.qty_venue == null ? 0 : datum.qty_venue", "as": "qty_venue"}
 ],
 "mark": {"type": "geoshape"},
@@ -26,15 +26,15 @@
   "color":{
     "field": "qty_venue",
     "type":"quantitative",
-    "title": "Number of venues",
+    "title": "Number of venues per capita",
     "scale": {
       "type": "linear",
-      "domain": [0, 10, 50, 100],
       "range": ["#a3a6ab", "#0868ac", "#084081"]
     }
   }
   ,"tooltip":[
     {"field": "properties.LOC_NAME", "type": "nominal", "title": "Suburb"},
-    {"field": "qty_venue","type": "quantitative","title":"Number of venues"}
+    {"field": "qty_venue","type": "quantitative","title":"Number of venues"},
+    {"field": "pop","type": "quantitative","title":"Population"}
   ]
 }}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "title": "Live Performance Attendance in NSW Over Time",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/live-performance-attendance.csv"
+  },
+  "mark": {
+    "type": "area",
+    "line": true,
+    "point": true,
+    "color": "#0868ac"
+  },
+  "encoding": {
+    "x": {
+      "field": "Years",
+      "type": "temporal",
+      "title": "Year",
+      "axis": {
+        "format": "%Y"
+      }
+    },
+    "y": {
+      "field": "Attendees",
+      "type": "quantitative",
+      "title": "Number of Attendees"
+    },
+    "tooltip": [
+      {
+        "field": "Years",
+        "type": "temporal",
+        "title": "Year"
+      },
+      {
+        "field": "Attendees",
+        "type": "quantitative",
+        "title": "Number of Attendees"
+      }
+    ]
+  }
+}

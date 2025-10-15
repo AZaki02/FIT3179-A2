@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Melbourne Live Music Venues per Suburb, 2025",
-  "width": 400,
-  "height": 400,
+  "width": 500,
+  "height": 300,
   "projection": {"type": "mercator"},
       "data": {
         "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
@@ -32,7 +32,7 @@
   "color":{
     "field": "most_common",
     "type": "nominal",
-    "title": "Most common venue type per suburb, 2025"
+    "title": "Venue type"
   },
     "opacity": {
       "condition": {"param": "space_type", "value": 1},
