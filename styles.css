@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: url('images/bkg2.jpg') center center / cover no-repeat fixed;
+    background: url('/images/bkg2.jpg') center center / cover no-repeat fixed;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,8 @@ table {
 }
 
 td {
-    padding-left: 5%
+    padding: 1rem;
+    vertical-align: top;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
 }
 
 p {
-    color: #f3f3f3;
+    color: #1C1712;
     line-height: 1.6;
     font-style: bold;
     font-weight: 600;
@@ -64,7 +65,4 @@ p {
     color: #222;
     margin-top: -0.25rem;
     margin-bottom: 1rem;
-
 }
-
-
