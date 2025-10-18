@@ -1,8 +1,8 @@
 property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,lon
-110736,National Gallery of Victoria,"180 St Kilda Road, Southbank, 3006",Southbank,3006,Amusement/Theme Venue,https://www.ngv.vic.gov.au/,-37.8228987,144.9695693
-111467,Sea Life Melbourne Aquarium,"Sea Life Melbourne Aquarium, King Street, Melbourne, 3000",Melbourne,3000,Amusement/Theme Venue,https://www.melbourneaquarium.com.au/,-37.82099957,144.9580471
-102962,Witches In Britches,"78-86 Dudley Street, West Melbourne, 3003",West Melbourne,3003,Amusement/Theme Venue,http://www.witchesinbritches.com.au/,-37.80900975,144.9526862
-650513,Wonderland Under the Melbourne Star,"Shop 5, 101 Waterfront Way, Docklands, 3008",Docklands,3008,Amusement/Theme Venue,https://www.melbournestar.com/?gclid=CjwKCAiAmb7RBRATEiwA7kS8VBQVMosVIhqHOV3pMaapzYqC9b15mj8JCZDZ2QitiLOvI-qVdKuh5hoCTtgQAvD_BwE,-37.81170826,144.9381841
+110736,National Gallery of Victoria,"180 St Kilda Road, Southbank, 3006",Southbank,3006,Amusement Venue,https://www.ngv.vic.gov.au/,-37.8228987,144.9695693
+111467,Sea Life Melbourne Aquarium,"Sea Life Melbourne Aquarium, King Street, Melbourne, 3000",Melbourne,3000,Amusement Venue,https://www.melbourneaquarium.com.au/,-37.82099957,144.9580471
+102962,Witches In Britches,"78-86 Dudley Street, West Melbourne, 3003",West Melbourne,3003,Amusement Venue,http://www.witchesinbritches.com.au/,-37.80900975,144.9526862
+650513,Wonderland Under the Melbourne Star,"Shop 5, 101 Waterfront Way, Docklands, 3008",Docklands,3008,Amusement Venue,https://www.melbournestar.com/?gclid=CjwKCAiAmb7RBRATEiwA7kS8VBQVMosVIhqHOV3pMaapzYqC9b15mj8JCZDZ2QitiLOvI-qVdKuh5hoCTtgQAvD_BwE,-37.81170826,144.9381841
 631756,The Emerald Peacock,"233 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,http://theemeraldpeacock.com/,-37.81146925,144.9655499
 562238,Manchuria,"Level 1, 7-9 Waratah Place, Melbourne, 3000",Melbourne,3000,Bar,http://www.manchuriabar.com/,-37.8116263,144.9670985
 627193,Aria Bar & Lounge,"Podium, 1 Southgate Avenue, Southbank, 3006",Southbank,3006,Bar,http://www.sebeldocklands.com.au/en/meeting-rooms/aria-bar-and-events.html,-37.82047862,144.9658909
@@ -170,6 +170,7 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Band Room,http://www.boney.net.au/,-37.81290578,144.9713687
 508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Band Room,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
 644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Band Room,http://urbancentral.com.au/,-37.82795248,144.9575823
+
 
 
 
