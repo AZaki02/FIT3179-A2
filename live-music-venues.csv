@@ -74,7 +74,6 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 598592,RACV City Club,"501 Bourke Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.racv.com.au/travel-leisure/racv-club/city-club.html,-37.81557208,144.9591017
 105379,Colonial Hotel/Brown Alley Night Club,"240 King Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.thecolonialhotel.com.au/,-37.81460565,144.9550937
 103402,Town Hall Hotel,"33 Errol Street, North Melbourne, 3051",North Melbourne,3051,Hotel,http://www.townhallhotelnorthmelbourne.com.au/,-37.80422448,144.9492425
-634051,Munich Brauhaus,"45 South Wharf Promenade, South Wharf, 3006",South Wharf,3006,Hotel,http://www.munichbrauhaus.com/,-37.82407577,144.9504333
 110111,Royal Standard Hotel,"333-337 William Street, West Melbourne, 3003",West Melbourne,3003,Hotel,http://www.royalstandardhotel.com.au/,-37.80777174,144.9544062
 110106,The Metropolitan Hotel,"The Metropolitan Hotel, 263-265 William Street, Melbourne, 3000",Melbourne,3000,Hotel,http://metropolitan.melbourne/,-37.8129114,144.9567624
 103922,Garden State Hotel,"95-101 Flinders Lane, Melbourne, 3000",Melbourne,3000,Hotel,http://gardenstatehotel.com.au/,-37.81533365,144.9710389
@@ -82,7 +81,6 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 109721,Three Crowns Hotel,"361-365 Victoria Street, West Melbourne, 3003",West Melbourne,3003,Hotel,https://www.threecrownshotel.com.au/,-37.80528791,144.9494898
 564954,Flinders Station Hotel Backpackers,"Unit 8-17, Level 3-12, 35 Elizabeth Street, Melbourne, 3000",Melbourne,3000,Hotel,https://oconnells.com.au/,-37.81739448,144.9644989
 613003,P.J. O'Brien's,"Shop 12-16, Ground, 3 Southgate Avenue, Southbank, 3006",Southbank,3006,Hotel,http://www.pjobriens.com.au/southbank/,-37.82033398,144.966418
-634045,The General Assembly,"29 South Wharf Promenade, South Wharf, 3006",South Wharf,3006,Hotel,http://www.thegeneralassembly.com.au/,-37.82411829,144.9518903
 101613,Clyde Hotel,"377-389 Cardigan Street, Carlton, 3053",Carlton,3053,Hotel,https://www.theclydehotel.com.au/location/,-37.7972842,144.9658479
 108983,The Hotel Windsor,"103-137 Spring Street, Melbourne, 3000",Melbourne,3000,Hotel,http://www.thehotelwindsor.com.au/,-37.81195937,144.9731363
 108202,Capitano,"421 Rathdowne Street, Carlton, 3053",Carlton,3053,Hotel,https://www.thebeaufort.com.au/,-37.79645167,144.9705082
@@ -172,3 +170,4 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Venue,http://www.boney.net.au/,-37.81290578,144.9713687
 508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Venue,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
 644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Venue,http://urbancentral.com.au/,-37.82795248,144.9575823
+
