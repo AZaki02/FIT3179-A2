@@ -1,271 +1,141 @@
 year,rank,genre1
-1988,1,pop
-1989,1,pop
-1990,1,pop
-1991,1,rock
-1992,1,country
-1993,1,rock
-1994,1,pop
-1995,1,hip hop
-1996,1,dance
-1997,1,pop
-1998,1,latin
-1999,1,latin
-2000,1,pop
 2001,1,country
-2002,1,hip hop
-2003,1,pop
-2004,1,rock
-2005,1,pop
-2006,1,pop
-2007,1,pop
-2008,1,rap
-2009,1,pop
-2010,1,hip hop
-2011,1,dance
-2012,1,pop
-2013,1,pop
-2014,1,hip hop
-1988,2,pop
-1989,2,pop
-1990,2,hip hop
-1991,2,indie rock
-1992,2,rock
-1993,2,pop
-1994,2,pop
-1995,2,techno
-1996,2,hip hop
-1997,2,pop
-1998,2,hip hop
-1999,2,pop
-2000,2,rock
 2001,2,reggae
-2002,2,pop
-2003,2,hip hop
-2004,2,pop
-2005,2,pop
-2006,2,dance
-2007,2,pop
-2008,2,pop
-2009,2,house
-2010,2,pop
-2011,2,pop
-2012,2,k pop
-2013,2,r&b
-2014,2,doo-wop
-1988,3,pop
-1989,3,pop
-1990,3,pop
-1991,3,pop
-1992,3,r&b
-1993,3,rock
-1994,3,rock
-1995,3,soul
-1996,3,pop
-1997,3,folk
-1998,3,rock
-1999,3,europop
-2000,3,breakbeat
-2001,3,pop
-2002,3,dance
-2003,3,pop
-2004,3,alternative rock
-2005,3,r&b
-2006,3,pop
-2007,3,pop
-2008,3,pop
-2009,3,country
-2010,3,pop
-2011,3,pop
-2012,3,pop
-2013,3,folk
-2014,3,country
-1988,4,pop
-1989,4,pop
-1990,4,pop
-1991,4,pop
-1992,4,rock
-1993,4,reggae
-1994,4,pop
-1995,4,pop
-1996,4,trance
-1997,4,rap
-1998,4,rock
-1999,4,grunge
-2000,4,pop
-2001,4,reggae
-2002,4,rap
-2003,4,pop
-2004,4,pop
-2005,4,pop
-2006,4,pop
-2007,4,grunge
-2008,4,pop
-2009,4,pop
-2010,4,rock
-2011,4,pop
-2012,4,rap
-2013,4,house
-2014,4,indie rock
-1988,5,pop
-1989,5,pop
-1990,5,rock
-1991,5,rock
-1992,5,opera
-1993,5,reggae
-1994,5,pop
-1995,5,dance
-1996,5,pop
-1997,5,pop
-1998,5,pop
-1999,5,punk
-2000,5,pop
-2001,5,rock
-2002,5,latin
-2003,5,hip hop
-2004,5,hip hop
-2005,5,rap
-2006,5,pop
-2007,5,rock
-2008,5,rock
-2009,5,rap
-2010,5,pop
-2011,5,pop
-2012,5,rap
-2013,5,pop
-2014,5,dance
-1988,6,pop
-1989,6,pop
-1990,6,pop
-1991,6,pop
-1992,6,r&b
-1993,6,reggae
-1994,6,pop
-1995,6,rock
-1996,6,blues
-1997,6,hip hop
-1998,6,rock
-1999,6,pop
-2000,6,pop
-2001,6,hip hop
-2002,6,pop
-2003,6,rock
-2004,6,pop
-2005,6,hip hop
-2006,6,pop
-2007,6,r&b
-2008,6,pop
-2009,6,pop
-2010,6,pop
-2011,6,dance
-2012,6,hip hop
-2013,6,pop
-2014,6,pop
-1988,7,pop
-1989,7,pop
-1990,7,pop
-1991,7,rock
-1992,7,dance
-1993,7,rock
-1994,7,r&b
-1995,7,rock
-1996,7,electronic
-1997,7,pop
-1998,7,pop
-1999,7,dance
-2000,7,pop
-2001,7,pop
-2002,7,country
-2003,7,pop
-2004,7,rock
-2005,7,r&b
-2006,7,indie rock
-2007,7,pop
-2008,7,pop
-2009,7,r&b
-2010,7,pop
-2011,7,hip hop
-2012,7,dance
-2013,7,house
-2014,7,singer-songwriter
-1988,8,pop
-1989,8,pop
-1990,8,pop
-1991,8,r&b
-1992,8,pop
-1993,8,rock
-1994,8,rock
-1995,8,pop
-1996,8,r&b
-1997,8,rock
-1998,8,punk
-1999,8,country
-2000,8,dance
-2001,8,rock
-2002,8,pop
-2003,8,latin
-2004,8,hip hop
-2005,8,hip hop
-2006,8,rock
-2007,8,pop
-2008,8,pop
-2009,8,pop
-2010,8,pop
-2011,8,pop
-2012,8,singer-songwriter
-2013,8,rock
-2014,8,pop
-1988,9,pop
-1989,9,pop
-1990,9,pop
-1991,9,pop
-1992,9,rock
-1993,9,pop
-1994,9,grunge
-1995,9,pop
-1996,9,hip hop
-1997,9,electronic
-1998,9,country
-1999,9,punk
-2000,9,dance
 2001,9,children music
-2002,9,pop
-2003,9,hip hop
-2004,9,pop
-2005,9,rock
-2006,9,pop
-2007,9,pop
-2008,9,pop
-2009,9,pop
-2010,9,pop
-2011,9,pop
-2012,9,hip hop
-2013,9,hip hop
-2014,9,house
-1988,10,rock
-1989,10,rock
-1990,10,new wave
-1991,10,pop
-1992,10,adult contemporary
-1993,10,rock
-1994,10,rock
-1995,10,pop
-1996,10,r&b
-1997,10,eurodance
-1998,10,country
-1999,10,pop
-2000,10,rock
+2001,6,hip hop
+2001,7,pop
 2001,10,pop
+2001,3,pop
+2001,8,rock
+2001,4,reggae
+2001,5,rock
+2002,1,hip hop
+2002,2,pop
+2002,3,dance
+2002,7,country
+2002,6,pop
+2002,8,pop
+2002,9,pop
 2002,10,pop
+2002,4,rap
+2002,5,latin
+2003,1,pop
+2003,2,hip hop
+2003,3,pop
+2003,9,hip hop
+2003,8,latin
+2003,7,pop
 2003,10,r&b
+2003,6,rock
+2003,4,pop
+2003,5,hip hop
+2004,1,rock
+2004,2,pop
+2004,3,alternative rock
+2004,8,hip hop
 2004,10,hip hop
+2004,6,pop
+2004,9,pop
+2004,7,rock
+2004,4,pop
+2004,5,hip hop
+2005,1,pop
+2005,2,pop
+2005,3,r&b
+2005,6,hip hop
+2005,8,hip hop
 2005,10,pop
+2005,7,r&b
+2005,9,rock
+2005,4,pop
+2005,5,rap
+2006,1,pop
+2006,2,dance
+2006,3,pop
+2006,7,indie rock
+2006,6,pop
+2006,9,pop
 2006,10,pop
+2006,8,rock
+2006,4,pop
+2006,5,pop
+2007,1,pop
+2007,2,pop
+2007,3,pop
+2007,7,pop
+2007,8,pop
+2007,9,pop
+2007,6,r&b
 2007,10,reggae
+2007,4,grunge
+2007,5,rock
+2008,1,rap
+2008,2,pop
+2008,3,pop
+2008,4,pop
+2008,6,pop
+2008,7,pop
+2008,8,pop
+2008,9,pop
 2008,10,rock
+2008,5,rock
+2009,1,pop
+2009,2,house
+2009,3,country
+2009,4,pop
+2009,6,pop
+2009,8,pop
+2009,9,pop
 2009,10,pop
+2009,7,r&b
+2009,5,rap
+2010,1,hip hop
+2010,2,pop
+2010,3,pop
+2010,4,rock
+2010,6,pop
+2010,7,pop
+2010,8,pop
+2010,9,pop
 2010,10,pop
+2010,5,pop
+2011,1,dance
+2011,2,pop
+2011,3,pop
+2011,4,pop
+2011,6,dance
+2011,7,hip hop
+2011,8,pop
+2011,9,pop
 2011,10,pop
+2011,5,pop
+2012,1,pop
+2012,2,k pop
+2012,3,pop
+2012,4,rap
+2012,7,dance
+2012,6,hip hop
+2012,9,hip hop
 2012,10,house
+2012,8,singer-songwriter
+2012,5,rap
+2013,1,pop
+2013,2,r&b
+2013,3,folk
+2013,4,house
+2013,9,hip hop
+2013,7,house
+2013,6,pop
 2013,10,pop
+2013,8,rock
+2013,5,pop
+2014,1,hip hop
+2014,2,doo-wop
+2014,3,country
+2014,4,indie rock
+2014,9,house
+2014,5,dance
+2014,6,pop
+2014,8,pop
 2014,10,pop
+2014,7,singer-songwriter
