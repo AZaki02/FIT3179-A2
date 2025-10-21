@@ -1,8 +1,8 @@
 property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,lon
-110736,National Gallery of Victoria,"180 St Kilda Road, Southbank, 3006",Southbank,3006,Amusement Venue,https://www.ngv.vic.gov.au/,-37.8228987,144.9695693
-111467,Sea Life Melbourne Aquarium,"Sea Life Melbourne Aquarium, King Street, Melbourne, 3000",Melbourne,3000,Amusement Venue,https://www.melbourneaquarium.com.au/,-37.82099957,144.9580471
-102962,Witches In Britches,"78-86 Dudley Street, West Melbourne, 3003",West Melbourne,3003,Amusement Venue,http://www.witchesinbritches.com.au/,-37.80900975,144.9526862
-650513,Wonderland Under the Melbourne Star,"Shop 5, 101 Waterfront Way, Docklands, 3008",Docklands,3008,Amusement Venue,https://www.melbournestar.com/?gclid=CjwKCAiAmb7RBRATEiwA7kS8VBQVMosVIhqHOV3pMaapzYqC9b15mj8JCZDZ2QitiLOvI-qVdKuh5hoCTtgQAvD_BwE,-37.81170826,144.9381841
+110736,National Gallery of Victoria,"180 St Kilda Road, Southbank, 3006",Southbank,3006,Amusement/Theme Venue,https://www.ngv.vic.gov.au/,-37.8228987,144.9695693
+111467,Sea Life Melbourne Aquarium,"Sea Life Melbourne Aquarium, King Street, Melbourne, 3000",Melbourne,3000,Amusement/Theme Venue,https://www.melbourneaquarium.com.au/,-37.82099957,144.9580471
+102962,Witches In Britches,"78-86 Dudley Street, West Melbourne, 3003",West Melbourne,3003,Amusement/Theme Venue,http://www.witchesinbritches.com.au/,-37.80900975,144.9526862
+650513,Wonderland Under the Melbourne Star,"Shop 5, 101 Waterfront Way, Docklands, 3008",Docklands,3008,Amusement/Theme Venue,https://www.melbournestar.com/?gclid=CjwKCAiAmb7RBRATEiwA7kS8VBQVMosVIhqHOV3pMaapzYqC9b15mj8JCZDZ2QitiLOvI-qVdKuh5hoCTtgQAvD_BwE,-37.81170826,144.9381841
 631756,The Emerald Peacock,"233 Lonsdale Street, Melbourne, 3000",Melbourne,3000,Bar,http://theemeraldpeacock.com/,-37.81146925,144.9655499
 562238,Manchuria,"Level 1, 7-9 Waratah Place, Melbourne, 3000",Melbourne,3000,Bar,http://www.manchuriabar.com/,-37.8116263,144.9670985
 627193,Aria Bar & Lounge,"Podium, 1 Southgate Avenue, Southbank, 3006",Southbank,3006,Bar,http://www.sebeldocklands.com.au/en/meeting-rooms/aria-bar-and-events.html,-37.82047862,144.9658909
@@ -74,6 +74,7 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 598592,RACV City Club,"501 Bourke Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.racv.com.au/travel-leisure/racv-club/city-club.html,-37.81557208,144.9591017
 105379,Colonial Hotel/Brown Alley Night Club,"240 King Street, Melbourne, 3000",Melbourne,3000,Hotel,https://www.thecolonialhotel.com.au/,-37.81460565,144.9550937
 103402,Town Hall Hotel,"33 Errol Street, North Melbourne, 3051",North Melbourne,3051,Hotel,http://www.townhallhotelnorthmelbourne.com.au/,-37.80422448,144.9492425
+634051,Munich Brauhaus,"45 South Wharf Promenade, South Wharf, 3006",South Wharf,3006,Hotel,http://www.munichbrauhaus.com/,-37.82407577,144.9504333
 110111,Royal Standard Hotel,"333-337 William Street, West Melbourne, 3003",West Melbourne,3003,Hotel,http://www.royalstandardhotel.com.au/,-37.80777174,144.9544062
 110106,The Metropolitan Hotel,"The Metropolitan Hotel, 263-265 William Street, Melbourne, 3000",Melbourne,3000,Hotel,http://metropolitan.melbourne/,-37.8129114,144.9567624
 103922,Garden State Hotel,"95-101 Flinders Lane, Melbourne, 3000",Melbourne,3000,Hotel,http://gardenstatehotel.com.au/,-37.81533365,144.9710389
@@ -81,6 +82,7 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 109721,Three Crowns Hotel,"361-365 Victoria Street, West Melbourne, 3003",West Melbourne,3003,Hotel,https://www.threecrownshotel.com.au/,-37.80528791,144.9494898
 564954,Flinders Station Hotel Backpackers,"Unit 8-17, Level 3-12, 35 Elizabeth Street, Melbourne, 3000",Melbourne,3000,Hotel,https://oconnells.com.au/,-37.81739448,144.9644989
 613003,P.J. O'Brien's,"Shop 12-16, Ground, 3 Southgate Avenue, Southbank, 3006",Southbank,3006,Hotel,http://www.pjobriens.com.au/southbank/,-37.82033398,144.966418
+634045,The General Assembly,"29 South Wharf Promenade, South Wharf, 3006",South Wharf,3006,Hotel,http://www.thegeneralassembly.com.au/,-37.82411829,144.9518903
 101613,Clyde Hotel,"377-389 Cardigan Street, Carlton, 3053",Carlton,3053,Hotel,https://www.theclydehotel.com.au/location/,-37.7972842,144.9658479
 108983,The Hotel Windsor,"103-137 Spring Street, Melbourne, 3000",Melbourne,3000,Hotel,http://www.thehotelwindsor.com.au/,-37.81195937,144.9731363
 108202,Capitano,"421 Rathdowne Street, Carlton, 3053",Carlton,3053,Hotel,https://www.thebeaufort.com.au/,-37.79645167,144.9705082
@@ -153,24 +155,20 @@ property_number,venue_name,venue_address,suburb,postcode,space_type,website,lat,
 109417,Regent Theatre,"191-197 Collins Street, Melbourne, 3000",Melbourne,3000,Theatre,https://marrinergroup.com.au/venues/regent-theatre,-37.81534585,144.967538
 103619,The Comedy Theatre,"240 Exhibition Street, Melbourne, 3000",Melbourne,3000,Theatre,https://marrinergroup.com.au/venues/comedy-theatre,-37.81021736,144.9698959
 110862,Meat Market Art Centre,"36-54 Courtney Street, North Melbourne, 3051",North Melbourne,3051,Theatre,http://www.melbourne.vic.gov.au/community/hubs-bookable-spaces/meat-market/Pages/meat-market.aspx,-37.80159051,144.9537282
-547254,Club Voltaire,"Gnd & Level 1, 14 Raglan Street, North Melbourne, 3051",North Melbourne,3051,Bar,https://www.facebook.com/clubvoltairemelbourne/,-37.80432381,144.9501153
-614009,The Comic's Lounge,"Level 1, 26 Errol Street, North Melbourne, 3051",North Melbourne,3051,Bar,https://www.thecomicslounge.com.au/,-37.80449837,144.9495408
-657233,The Toff in Town,"Unit S3-S4, Level 2, 252 Swanston Street, Melbourne, 3000",Melbourne,3000,Bar,https://www.thetoffintown.com/,-37.81204362,144.9652115
-515538,Paris Cat Jazz Club,"4-6 Goldie Place, Melbourne, 3000",Melbourne,3000,Bar,http://pariscat.com.au/,-37.81355853,144.9607541
-104020,The Forum Theatre,"150-162 Flinders Street, Melbourne, 3000",Melbourne,3000,Bar,https://forummelbourne.com.au/,-37.81672152,144.9694951
-106081,The Curtin,"John Curtin Hotel, 27-31 Lygon Street, Carlton, 3053",Carlton,3053,Bar,http://www.johncurtinhotel.com/,-37.80621217,144.9658161
-577360,Victoria Star Cruises,"Berth 10, Victoria Harbour, Docklands, 3008",Docklands,3008,Bar,http://www.victoriastar.com.au/,-37.81738056,144.9423024
-105449,Duke Of Kent Hotel,"293-299 La Trobe Street, Melbourne, 3000",Melbourne,3000,Bar,,-37.81071423,144.9604994
-630016,Max Watt's,"Gnd & Bmt, 125 Swanston Street, Melbourne, 3000",Melbourne,3000,Bar,http://www.maxwatts.com.au/melbourne/,-37.81474151,144.9660093
-644830,Bird's Basement,"11 Singers Lane, Melbourne, 3000",Melbourne,3000,Bar,https://birdsbasement.com/,-37.81120983,144.9567972
-542129,Cherry Bar,"Basement, 103 Flinders Lane, Melbourne, 3000",Melbourne,3000,Band Room,http://cherrybar.com.au/,-37.81537653,144.970897
-559514,Arrow On Swanston,"488 Swanston Street, Carlton, 3053",Carlton,3053,Band Room,http://www.arrowonswanston.com.au/,-37.80545937,144.9632755
-565950,The Last Chance Rock & Roll Bar,"238 Victoria Street, Melbourne, 3000",Melbourne,3000,Band Room,https://www.facebook.com/thelastchancerockandrollbar/,-37.80601961,144.9585523
-110148,The Australian Club,"110 William Street, Melbourne, 3000",Melbourne,3000,Band Room,https://theaustralianclub.com.au/,-37.81667148,144.9588461
-105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Band Room,http://www.boney.net.au/,-37.81290578,144.9713687
-508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Band Room,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
-644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Band Room,http://urbancentral.com.au/,-37.82795248,144.9575823
-
-
-
-
+547254,Club Voltaire,"Gnd & Level 1, 14 Raglan Street, North Melbourne, 3051",North Melbourne,3051,Venue,https://www.facebook.com/clubvoltairemelbourne/,-37.80432381,144.9501153
+614009,The Comic's Lounge,"Level 1, 26 Errol Street, North Melbourne, 3051",North Melbourne,3051,Venue,https://www.thecomicslounge.com.au/,-37.80449837,144.9495408
+657233,The Toff in Town,"Unit S3-S4, Level 2, 252 Swanston Street, Melbourne, 3000",Melbourne,3000,Venue,https://www.thetoffintown.com/,-37.81204362,144.9652115
+515538,Paris Cat Jazz Club,"4-6 Goldie Place, Melbourne, 3000",Melbourne,3000,Venue,http://pariscat.com.au/,-37.81355853,144.9607541
+104020,The Forum Theatre,"150-162 Flinders Street, Melbourne, 3000",Melbourne,3000,Venue,https://forummelbourne.com.au/,-37.81672152,144.9694951
+106081,The Curtin,"John Curtin Hotel, 27-31 Lygon Street, Carlton, 3053",Carlton,3053,Venue,http://www.johncurtinhotel.com/,-37.80621217,144.9658161
+577360,Victoria Star Cruises,"Berth 10, Victoria Harbour, Docklands, 3008",Docklands,3008,Venue,http://www.victoriastar.com.au/,-37.81738056,144.9423024
+105449,Duke Of Kent Hotel,"293-299 La Trobe Street, Melbourne, 3000",Melbourne,3000,Venue,,-37.81071423,144.9604994
+630016,Max Watt's,"Gnd & Bmt, 125 Swanston Street, Melbourne, 3000",Melbourne,3000,Venue,http://www.maxwatts.com.au/melbourne/,-37.81474151,144.9660093
+644830,Bird's Basement,"11 Singers Lane, Melbourne, 3000",Melbourne,3000,Venue,https://birdsbasement.com/,-37.81120983,144.9567972
+542129,Cherry Bar,"Basement, 103 Flinders Lane, Melbourne, 3000",Melbourne,3000,Venue,http://cherrybar.com.au/,-37.81537653,144.970897
+559514,Arrow On Swanston,"488 Swanston Street, Carlton, 3053",Carlton,3053,Venue,http://www.arrowonswanston.com.au/,-37.80545937,144.9632755
+565950,The Last Chance Rock & Roll Bar,"238 Victoria Street, Melbourne, 3000",Melbourne,3000,Venue,https://www.facebook.com/thelastchancerockandrollbar/,-37.80601961,144.9585523
+110148,The Australian Club,"110 William Street, Melbourne, 3000",Melbourne,3000,Venue,https://theaustralianclub.com.au/,-37.81667148,144.9588461
+105967,Boney,"68 Little Collins Street, Melbourne, 3000",Melbourne,3000,Venue,http://www.boney.net.au/,-37.81290578,144.9713687
+508983,Roxanne Bar,"Level 2-3, 2 Coverlid Place, Melbourne, 3000",Melbourne,3000,Venue,https://www.facebook.com/roxannebarmelbourne/,-37.81229008,144.9685609
+644613,Urban Central Backpackers,"Pt Ground & Levels 1-5, 334-342 City Road, Southbank, 3006",Southbank,3006,Venue,http://urbancentral.com.au/,-37.82795248,144.9575823

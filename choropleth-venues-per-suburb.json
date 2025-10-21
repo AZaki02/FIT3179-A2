@@ -1,40 +1,131 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Melbourne Live Music Venues per Suburb, 2025",
-  "width": 400,
-  "height": 300,
-  "projection": {"type": "mercator"},
+  "title": "Live Music Venues Density, 2025",
+  "width": 200,
+  "height": 250,
+  "background": "#858585",
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
       "data": {
         "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
-        "format": {"type": "topojson", "feature": "vic_localities", "mesh": "true" }
+        "format": {
+          "type": "topojson",
+          "feature": "vic_localities",
+          "mesh": "true"
+        }
       },
-"transform": [
-  {
-    "lookup": "properties.LOC_NAME",
-    "from": {
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "white"
+      },
+      "encoding": {
+        "text": {
+          "field": "LOC_NAME",
+          "type": "nominal"
+        }
+      }
+    },
+    {
       "data": {
-        "url": "venues-per-suburb.csv"
+        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
+        "format": {
+          "type": "topojson",
+          "feature": "vic_localities",
+          "mesh": "true"
+        }
       },
-      "key": "suburb",
-      "fields": ["qty_venue", "pop"]
+      "transform": [
+        {
+          "lookup": "properties.LOC_NAME",
+          "from": {
+            "data": {
+              "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/venues-per-suburb.csv"
+            },
+            "key": "suburb",
+            "fields": [
+              "qty_venue",
+              "pop"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.qty_venue == null ? 0 : datum.qty_venue",
+          "as": "qty_venue"
+        },
+        {
+          "calculate": "datum.pop == null ? 1 : datum.pop",
+          "as": "pop"
+        },
+        {
+          "calculate": "datum.pop == 1 ? 'No data available for ' + datum.properties.LOC_NAME : 'N/A'", "as": "note"
+        },
+        {
+          "calculate": "datum.qty_venue / datum.pop * 1000",
+          "as": "qty_venue_per_capita"
+        }
+      ],
+      "mark": {
+        "type": "geoshape"
+      },
+      "encoding": {
+        "color": {
+          "field": "qty_venue_per_capita",
+          "type": "quantitative",
+          "title": "Venues per capita",
+          "scale": {
+            "type": "threshold",
+            "domain": [
+              0.01,
+              0.5,
+              1,
+              1.5,
+              2
+            ],
+            "range": [
+              "lightgray",
+              "#deebf7",
+              "#9ecae1",
+              "#3182bd",
+              "#08519c",
+              "#08306b"
+            ]
+          },
+          "legend": {"orient": "right"}
+        },
+        "tooltip": [
+          {
+            "field": "properties.LOC_NAME",
+            "type": "nominal",
+            "title": "Suburb"
+          },
+          {
+            "field": "qty_venue",
+            "type": "quantitative",
+            "title": "Number of venues"
+          },
+          {
+            "field": "pop",
+            "type": "quantitative",
+            "title": "Population",
+            "format": ","
+          },
+          {
+            "field": "qty_venue_per_capita",
+            "type": "quantitative",
+            "title": "Venues per 1000 people",
+            "format": ".2f"
+          },
+          {
+            "field": "note",
+            "type": "nominal",
+            "title": "Note"
+          }
+        ]
+      }
     }
-  },  
-  {"calculate": "datum.qty_venue == null ? 0 : datum.qty_venue", "as": "qty_venue"}
-],
-"mark": {"type": "geoshape"},
-"encoding": {
-  "color":{
-    "field": "qty_venue",
-    "type":"quantitative",
-    "title": "Number of venues per capita",
-    "scale": {
-      "type": "linear",
-      "range": ["#a3a6ab", "#0868ac", "#084081"]
-    }
-  }
-  ,"tooltip":[
-    {"field": "properties.LOC_NAME", "type": "nominal", "title": "Suburb"},
-    {"field": "qty_venue","type": "quantitative","title":"Number of venues"},
-    {"field": "pop","type": "quantitative","title":"Population"}
   ]
-}}
+}

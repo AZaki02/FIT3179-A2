@@ -1,0 +1,34 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Average Gigs attended, 2025",
+  "width": 300,
+  "height": 300,
+  "background": "#858585",
+  "data": {
+    "values": [
+      {"category": "0 - 1", "value": 31.3},
+      {"category": "2 - 10", "value": 62.8},
+      {"category": "11+", "value": 5.9}
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 95,
+    "padAngle": 0.025,
+    "cornerRadius": 5
+  },
+  "encoding": {
+    "theta": {"field": "value", "type": "quantitative"},
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "Gigs attended",
+      "scale": {
+        "scheme": "greens"
+      },
+      "sort": ["0 - 1", "2 - 10", "11+"],
+      "legend": {"orient": "right"}
+    }
+  },
+  "config": {}
+}

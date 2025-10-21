@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Aria Top 10 over the Years",
+  "width": 500,
+  "height": 400,
+  "background": "#858585",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/aria-chart-genre.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "Count"
+        }
+      ],
+      "groupby": [
+        "year",
+        "genre1"
+      ]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "interpolate": "monotone"
+  },
+  "params": [
+    {
+      "name": "genre",
+      "select": {
+        "type": "point",
+        "fields": [
+          "genre1"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Year",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "Count",
+      "type": "quantitative",
+      "title": "Number of Songs in Top 10"    },
+    "color": {
+      "field": "genre1",
+      "type": "nominal",
+      "title": "Genre",
+      "scale": {
+        "scheme": "set2"
+      },
+      "legend": {
+        "orient": "left",
+        "symbolSize": 200,
+        "symbolStrokeColor": "#111"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "genre",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "ordinal",
+        "title": "Year"
+      },
+      {
+        "field": "genre1",
+        "type": "nominal",
+        "title": "Genre"
+      },
+      {
+        "field": "Count",
+        "type": "quantitative",
+        "title": "Songs in Top 10"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "axis": {
+      "labelFontSize": 10,
+      "titleFontSize": 12
+    }
+  }
+}

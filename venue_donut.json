@@ -1,6 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "description": "A simple donut chart with embedded data.",
+    "title": "Melbourne Live Music Venues Distribution, 2025",
+  "width": 600,
+  "height": 300,
+  "background": "#858585",
   "data": {
     "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/live-music-venues.csv"
   },
@@ -8,26 +11,72 @@
     {
       "aggregate": [
         {
-          "op":"sum",
+          "op": "count",
           "field": "property_number",
-          "as": "space"
+          "as": "qty_venue"
         }
       ],
-      "groupby": ["space_type"]
+      "groupby": [
+        "space_type"
+      ]
+    },
+    {
+      "filter": "datum.space_type != ''"
     }
   ],
-  "mark": {"type": "arc", "innerRadius": 50},
-  "params": [{
-    "name": "space_type",
-    "select": {"type": "point", "fields": ["space_type"]},
-    "bind": "legend"
-  }],
-  "encoding": {
-    "theta": {"field": "space", "type": "quantitative"},
-    "color": {"field": "space_type", "type": "nominal", "title": "Venue Type"},
-    "opacity": {
-      "condition": {"param": "space_type", "value": 1},
-      "value": 0.2
+  "mark": {
+    "type": "arc",
+    "innerRadius": 95,
+    "padAngle": 0.025,
+    "cornerRadius": 5
+  },
+  "params": [
+    {
+      "name": "space_type",
+      "select": {
+        "type": "point",
+        "fields": [
+          "space_type"
+        ]
+      },
+      "bind": "legend"
     }
-  }
-}
+  ],
+  "encoding": {
+    "theta": {
+      "field": "qty_venue",
+      "type": "quantitative",
+      "sort": "ascending"
+    },
+    "color": {
+      "field": "space_type",
+      "type": "nominal",
+      "title": "Venue Type",
+      "scale": {
+        "scheme": "category20"
+      },
+      "legend": {
+        "orient": "top-right",
+        "symbolSize": 200,
+        "symbolStrokeColor": "#111"
+      }},
+    "opacity": {
+      "condition": {
+        "param": "space_type",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "space_type",
+        "type": "nominal",
+        "title": "Venue Type"
+      },
+      {
+        "field": "qty_venue",
+        "type": "quantitative",
+        "title": "Number of Venues"
+      }
+    ]
+  }}

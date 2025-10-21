@@ -1,46 +1,110 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Melbourne Live Music Venues per Suburb, 2025",
-  "width": 500,
-  "height": 300,
-  "projection": {"type": "mercator"},
-      "data": {
-        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
-        "format": {"type": "topojson", "feature": "vic_localities", "mesh": "true" }
-      },
-"transform": [
-  {
-    "lookup": "properties.LOC_NAME",
-    "from": {
-      "data": {
-        "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/venues-per-suburb.csv"
-      },
-      "key": "suburb",
-      "fields": ["qty_venue", "pop", "most_common"]
-    }
-  },  
-  {"calculate": "datum.qty_venue == null ? 0 : datum.qty_venue", "as": "qty_venue"},
-  {"calculate": "datum.most_common == null ? 'No data' : datum.most_common", "as": "most_common"}
-],
-"mark": {"type": "geoshape"},
-"params": [{
-    "name": "space_type",
-    "select": {"type": "point", "fields": ["most_common"]},
-    "bind": "legend"
-  }],
-"encoding": {
-  "color":{
-    "field": "most_common",
-    "type": "nominal",
-    "title": "Venue type"
+  "title": "Most Popular Venue Type per Suburb 2025",
+  "width": 200,
+  "height": 250,
+  "background": "#858585",
+  "projection": {
+    "type": "mercator"
   },
-    "opacity": {
-      "condition": {"param": "space_type", "value": 1},
-      "value": 0.2
+  "data": {
+    "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/ne_2.topojson.txt",
+    "format": {
+      "type": "topojson",
+      "feature": "vic_localities",
+      "mesh": "true"
     }
-  ,"tooltip":[
-    {"field": "properties.LOC_NAME", "type": "nominal", "title": "Suburb"},
-    {"field": "qty_venue", "type": "quantitative", "title":"Number of venues"},
-    {"field": "most_common","type": "nominal", "title":"Most Common"}
-  ]
-}}
+  },
+  "transform": [
+    {
+      "lookup": "properties.LOC_NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/venues-per-suburb.csv"
+        },
+        "key": "suburb",
+        "fields": [
+          "qty_venue",
+          "pop",
+          "most_common"
+        ]
+      }
+    },
+    {
+      "calculate": "datum.qty_venue == null ? 0 : datum.qty_venue",
+      "as": "qty_venue"
+    },
+    {
+      "calculate": "datum.most_common == null ? 'No data' : datum.most_common",
+      "as": "most_common"
+    }
+  ],
+  "mark": {
+    "type": "geoshape"
+  },
+  "params": [
+    {
+      "name": "space_type",
+      "select": {
+        "type": "point",
+        "fields": [
+          "most_common"
+        ]
+      },
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "color": {
+      "field": "most_common",
+      "type": "nominal",
+      "title": "Venue type",
+      "scale": {
+        "domain": [
+          "Bar",
+          "Nightclub",
+          "Hotel",
+          "Bar",
+          "Performance space",
+          "No data"
+        ],
+        "range": [
+          "#ff7f0e",
+          "#2ca02c",
+          "#ffbb78",
+          "#98df8a",
+          "lightgray"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "symbolSize": 200,
+        "symbolStrokeColor": "#111"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "param": "space_type",
+        "value": 1
+      },
+      "value": 0.2
+    },
+    "tooltip": [
+      {
+        "field": "properties.LOC_NAME",
+        "type": "nominal",
+        "title": "Suburb"
+      },
+      {
+        "field": "qty_venue",
+        "type": "quantitative",
+        "title": "Number of venues"
+      },
+      {
+        "field": "most_common",
+        "type": "nominal",
+        "title": "Most Common"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Genre Composition of Aria Top-10 per Year",
+  "width": 300,
+  "height": 300,
+  "background": "#858585",
+  "data": {
+    "url": "https://raw.githubusercontent.com/AZaki02/FIT3179-A2/refs/heads/main/aria-chart-genre.csv"
+  },
+  "transform": [
+    {
+      "aggregate": [
+        {
+          "op": "count",
+          "as": "Count"
+        }
+      ],
+      "groupby": [
+        "year",
+        "genre1"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "Rank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "Count",
+          "order": "descending"
+        }
+      ],
+      "groupby": [
+        "year"
+      ]
+    },
+    {
+      "filter": "datum.Rank <= 10"
+    },
+    {
+      "filter": "datum.year == yearSelection"
+    }
+  ],
+  "params": [
+    {
+      "name": "yearSelection",
+      "value": 2001,
+      "bind": {
+        "input": "range",
+        "min": 2001,
+        "max": 2014,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "mark": {
+    "type": "arc",
+    "innerRadius": 95,
+    "padAngle": 0.025,
+    "cornerRadius": 5
+  },
+  "encoding": {
+    "theta": {
+      "field": "Count",
+      "type": "quantitative",
+      "title": "Number of Songs",
+      "sort": "ascending"
+    },
+    "color": {
+      "field": "genre1",
+      "type": "nominal",
+      "title": "Genre",
+      "scale": {
+        "domain": [
+          "alternative rock",
+          "children music",
+          "country",
+          "dance",
+          "doo-wop",
+          "folk",
+          "grunge",
+          "hip hop",
+          "house",
+          "indie rock",
+          "k pop",
+          "latin",
+          "pop",
+          "r&b",
+          "rap",
+          "reggae",
+          "rock",
+          "singer-songwriter"
+        ],
+        "range": [
+          "#66c2a5",
+          "#fc8d62",
+          "#8da0cb",
+          "#e78ac3",
+          "#a6d854",
+          "#ffd92f",
+          "#e5c494",
+          "#b3b3b3"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "symbolSize": 200,
+        "symbolStrokeColor": "#111"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "genre1",
+        "type": "nominal",
+        "title": "Genre"
+      },
+      {
+        "field": "Count",
+        "type": "quantitative",
+        "title": "Songs in the Top 10"
+      }
+    ]
+  },
+  "config": {}
+}

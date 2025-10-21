@@ -1,10 +1,16 @@
 /* styles.css - Basic stylesheet for a data visualization website */
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     background: url('images/bkg2.jpg') center center / cover no-repeat fixed;
     margin: 0;
     padding: 0;
+}
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -21,8 +27,16 @@ header {
     padding: 1rem;
     background: #858585;
     border-radius: 8px;
-    opacity: 0.85;
+    opacity: 0.95;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 table {
     width: 100%;
@@ -41,7 +55,8 @@ h1 {
     text-align: center;
 }
 
-.h2, h3 {
+.h2,
+h3 {
     color: #1C1712;
     margin-top: 0;
 }
@@ -53,16 +68,20 @@ p {
     font-weight: 600;
 }
 
-.viz {
-    margin: 2rem 0;
-    text-align: center;
+.vizdiv {
     background-color: #858585;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .caption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
     font-size: 0.9rem;
     color: #222;
     margin-top: -0.25rem;
     margin-bottom: 1rem;
+}
+
+.a {
+    color: "#fff"
 }

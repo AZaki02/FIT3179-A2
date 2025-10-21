@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 
 <head>
     <meta charset="UTF-8">
@@ -9,17 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="geospatial_loader 1.js"></script>
     <script src="choropleth_loader 1.js"></script>
     <script src="choropleth_loader 2.js"></script>
     <script src="donut_loader 1.js"></script>
-    <script src="line_loader 1.js"></script>
+    <script src="bar_loader 1.js"></script>
+    <script src="attendancepie_loader.js"></script>
+    <script src="stackchart_loader.js"></script>
+    <script src="top10pie_loader.js"></script>
     <title>AZ - Assignment 2</title>
 </head>
 
 <body>
 
     <div class="main">
-        <h1>THE GREAT AUSTRALIAN MUSIC SCENE</h1>
+        <h1 class="shrikhand-regular">THE GREAT AUSTRALIAN MUSIC SCENE</h1>
 
         <div class="row">
             <table>
@@ -40,55 +48,65 @@
             </table>
         </div>
 
-        <div class="row">
-            <h2>Some statistics</h2>
+        <div>
+            <h2>The Venues</h2>
             <p> // Placeholder text</p>
-            <table>
-                <tr>
-                    <td>
-                        <div class="viz" id="choropleth2">
-                        </div>
-                    </td>
-                    <td>
-                        <p>
-                            // Placeholder text
-                        </p>
-                    </td>
+            <table class="vizdiv">
+                <tr style="text-align: center;">
+                    <td style="width: 30%;" id="choropleth1"></td>
+                    <td style="width: 30%;" id="geospatial1"></td>
+                    <td style="width: 30%;" id="choropleth2"> </td>
                 </tr>
-                <tr>
-                    <td>
-                        <div class="viz" id="line1">
-                        </div>
-                    </td>
-                    <td>
-                        <p>
-                            // Placeholder text
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="viz" id="donut1">
-                        </div>
-                    </td>
-                    <td>
-                        <p>
-                            // Placeholder text
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="viz" id="choropleth1">
-                        </div>
-                    </td>
-                    <td>
-                        <p>
-                            // Placeholder text
-                        </p>
-                    </td>
+                <tr style="text-align: center;">
+                    <td id="donut1"></td>
                 </tr>
             </table>
+        </div>
+        <div>
+            <div>
+                <h2>The People</h2>
+                <p> // Placeholder text</p>
+            </div>
+            <table class="vizdiv">
+                <tr>
+                    <td style="width: 60%;" id="bar1"></td>
+                    <td style="width: 35%;" id="piechart2"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <h2>The Music</h2>
+            <p> // Placeholder text</p>
+
+            <table class="vizdiv">
+                <tr>
+                    <td style="width: 60%;" id="stackchart"></td>
+                    <td style="width: 35%;" id="piechart"></td>
+                </tr>
+            </table>
+            <p> // Placeholder text</p>
+
+        </div>
+        <div style="text-align: left;">
+            <h3>Sources</h3>
+            <ul>
+                <li style="padding-bottom: 0.25%;">
+                    <a style="color: #08519c;" href="https://data.melbourne.vic.gov.au/explore/dataset/live-music-venues/information/">
+                        Live Music Venues Melbourne (data.gov.au)</a>
+                </li>
+                <li style="padding-bottom: 0.25%;">
+                    <a style="color: #08519c;" href="https://data.gov.au/data/dataset/nsw-number-of-attendees-to-live-performances-nsw">
+                        Live Performance Attendance NSW (data.gov.au)</a>
+                </li>
+                <li style="padding-bottom: 0.25%;">
+                    <a style="color: #08519c;" href="https://docs.google.com/spreadsheets/d/1iUY17-FbO5Ca8zWOIEbomUq-Zmb1QlVQqF_H1WZ8I-U/edit?gid=0#gid=0">
+                        Aria Top 100 over the years (ARIA.com.au)</a>
+                </li>
+                <li style="padding-bottom: 0.25%;">
+                    <a style="color: #08519c;" href="https://www.abs.gov.au/statistics/people/people-and-communities/attendance-selected-cultural-venues-and-events-australia/latest-release">
+                        Australian Cultural Events Attendance (abs.gov.au)</a>
+                </li>
+            </ul>
         </div>
 </body>
 
